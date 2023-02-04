@@ -30,7 +30,8 @@ img {
   flex-basis: 90%;
   /* border: 2px solid purple; */
   background: #ffffff;
-  box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1);
+  /* box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1); */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
   padding: 30px;
   /* width: 512px; */
@@ -101,6 +102,10 @@ input {
   cursor: pointer;
   border: none;
     /* width: 100%; */
+}
+
+.footer{
+  margin: 20px;
 }
 
 @media (max-width: 600px) {

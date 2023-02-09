@@ -9,6 +9,7 @@ img {
   height: auto;
 }
 
+/* ----- CONTAINERS FLEX BASIS SETTINGS */
 .whole-container {
   display: flex;
   flex-direction: column;
@@ -16,25 +17,34 @@ img {
 
 .heading {
   flex-basis: 10%;
+}
+
+.form-container {
+  flex-basis: 80%;
+}
+
+.footer-container {
+  flex-basis: 10%;
+}
+
+.heading {
   /* border: 2px solid green; */
   padding: 1rem;
   text-align: center;
   cursor: pointer;
 }
 
-/* .logo {
-  width: 100%;
-} */
+.logo {
+  width: 20%;
+}
 
+/* ---- FORM DIVISION CSS ----  */
 .form-container {
-  flex-basis: 90%;
-  /* border: 2px solid purple; */
+  border: 2px solid purple;
   background: #ffffff;
-  /* box-shadow: 3px -5px 40px rgba(205, 205, 212, 0.1); */
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 20px;
   padding: 30px;
-  /* width: 512px; */
   width: 35%;
   height: auto;
   margin: 0 auto;
@@ -106,9 +116,11 @@ input {
   /* width: 100%; */
 }
 
-.footer {
+
+/* ---- FOOTER DIVISION CSS ----  */
+.footer-container {
   display: flex;
-  flex-direction: row;
+  /* flex-direction: row; */
   margin: 20px;
   margin-left: 18rem;
   color: #cd3939;
@@ -121,7 +133,8 @@ input {
 .copyright {
   flex-basis: 80%;
 }
-/* ----- MEDIA QUERY SECTION ----- */
+
+/* ----- MEDIA QUERY CSS SECTION ----- */
 /* @media (max-width: 320px) {
     .footer {
     display: none;
@@ -142,6 +155,21 @@ input {
   } 
 }
 
+@media (max-width: 1024px) {
+  .logo {
+    width: 80%;
+  }
+ 
+  .form-container {
+    width: auto;
+    margin: 2rem;
+  }
+  .footer {
+    margin-left: 2rem;
+  }
+}
+
+
 @media (min-width: 1024px) {
   /* .logo {
     width: 20%;
@@ -154,24 +182,6 @@ input {
 
   .home {
     flex-basis: 10%;
-  }
-}
-
-@media (max-width: 1024px) {
-  /* .logo {
-    width: 20%;
-  } */
-  .containers {
-    flex-direction: column;
-    background-color: #39cdcc;
-  }
-
-  .form-container {
-    width: auto;
-    margin: 2rem;
-  }
-  .footer {
-    margin-left: 2rem;
   }
 }
 
